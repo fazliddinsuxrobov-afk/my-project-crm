@@ -206,7 +206,3 @@ class ReturnAdmin(admin.ModelAdmin):
         "created_at",
         "updated_at",
     )
-
-
-# CartItem отдельно регистрировать необязательно,
-# потому что он управляется через CartAdmin.
