@@ -1,6 +1,6 @@
 from drf_spectacular.utils import extend_schema
-
 from rest_framework.generics import ListAPIView
+
 from .models import Product, Category, ProductImage
 from .serializer import ProductSerializer, CategorySerializer, ProductImageSerializer
 
