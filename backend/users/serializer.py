@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from .models import User, UserManager, VerificationCode
+from .models import User, VerificationCode
 
 
 class SerializerUser(ModelSerializer):
