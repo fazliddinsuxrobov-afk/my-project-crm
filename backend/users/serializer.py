@@ -8,12 +8,6 @@ class SerializerUser(ModelSerializer):
         model = User
         fields = '__all__'
 
-class SerializerUserManager(ModelSerializer):
-    class Meta:
-        model = UserManager
-        fields = '__all__'
-
-
 class SerializerVerificationCode(ModelSerializer):
     class Meta:
         model = VerificationCode
