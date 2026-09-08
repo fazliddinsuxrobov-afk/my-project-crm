@@ -7,12 +7,12 @@ from .views import (
 
 
 urlpatterns = [
-    
-    path('cart-create-list',CartSerializerListCreateAPIView.as_view(),name='cart_list_create'),
-    path('cart-item-create-list',CartItemSerializerListCreateAPIView.as_view(),name='cart_item_list_create'),
-    path('order-detail',OrderSerializerDetailAPIView.as_view(),name='order_detail'),
-    path('order-item-create-list',OrderItemSerializerListCreateAPIView.as_view(),name='order_item_list_create'),
-    path('order-status-history-create-list',OrderStatusHistorySerializerListCreateAPIView.as_view(),name='order_status_history_list_create'),
-    path('return-create-list',ReturnSerializerListCreateAPIView.as_view(),name='return_list_create'),
+    path('cart/', CartSerializerListCreateAPIView.as_view(), name='cart-list-create'),
+    path('cart-items/', CartItemSerializerListCreateAPIView.as_view(), name='cart-item-list-create'),
 
+    path('orders/<int:pk>/', OrderSerializerDetailAPIView.as_view(), name='order-detail'),
+    path('order-items/', OrderItemSerializerListCreateAPIView.as_view(), name='order-item-list-create'),
+    path('order-status-history/', OrderStatusHistorySerializerListCreateAPIView.as_view(), name='order-status-history-list-create'),
+    
+    path('returns/', ReturnSerializerListCreateAPIView.as_view(), name='return-list-create'),
 ]
